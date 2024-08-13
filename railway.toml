@@ -1,0 +1,17 @@
+# Railway configuration file for Docker deployment
+
+[build]
+# Use the Dockerfile in the project root
+dockerfile = "Dockerfile"
+
+[deploy]
+# Set the service to be deployed with Docker
+service = "web"
+
+[static]
+# If you have any static files, specify the directory here (optional)
+path = "static"
+
+[env]
+# Specify environment variables, if any
+PORT = "8000"
